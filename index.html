@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Protectora de animales</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./css/miestilo.css">
+
+</head>
+
+<body>
+
+
+  <div id="wrapper">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-6 fixed-top">
+      <div class="container-fluid d-flex justify-content-between navbar-center">
+        <a class="navbar-brand d-flex align-items-center" href="#hero">PROTECTORA MÁLAGA</a>
+        <div class="collapse navbar-collapse order-lg-1" id="navMenu">
+
+          <ul class="navbar-nav mx-auto text-center">
+
+            <li class="nav-item px-4 py-6">
+              <a class="nav-link text-dark" href="#hero">HOME</a>
+            </li>
+
+            <li class="nav-item px-4 py-6 dropdown">
+              <a class="nav-link text-dark dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">ADOPTAR</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#michi">Adopta un michi</a></li>
+                <li><a class="dropdown-item" href="#perrete">Adopta un perrete</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item px-4 py-6">
+              <a class="nav-link text-dark" href="#galeria">GALERIA</a>
+            </li>
+
+            <li class="nav-item px-4 py-6">
+              <a class="nav-link text-dark" href="#nosotras">NOSOTRAS</a>
+            </li>
+
+            <li class="nav-item px-4 py-6 border-0">
+              <a class="nav-link text-dark" href="#colabora">COLABORA</a>
+            </li>
+
+            <li class="nav-item px-4 py-6 border-0">
+              <a class="nav-link text-dark" href="#contact">CONTACTO</a>
+            </li>
+
+          </ul>
+        </div>
+
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+      </div>
+    </nav>
+
+
+
+    <section id="hero" class="">
+
+      <!-- Aquí tenemos la hero section, con un carousel de imágenes de gatetes que van pasando cada 5s. -->
+
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+
+        <div class="carousel-inner">
+
+          <div class="carousel-item active" data-bs-interval="5000">
+            <img src="./imagenes/grumpy-cat-looking-camera-with-white-background.jpg" class="d-block w-100"
+              alt="Manolo juzgando">
+            <div class="carousel-caption d-none d-md-block text-end">
+              <h5>Manolo necesita sus latitas de comida rica</h5>
+            </div>
+          </div>
+
+          <div class="carousel-item" data-bs-interval="5000">
+            <img src="./imagenes/selective-shot-red-mackerel-tabby-cat-looking-camera-with-green-background.jpg"
+              class="d-block w-100" alt="Ale esperando que haya latitas en su futuro">
+            <div class="carousel-caption d-none d-md-block text-end">
+              <h5>Disculpe pero necesito una ducha</h5>
+            </div>
+          </div>
+
+          <div class="carousel-item" data-bs-interval="5000">
+            <img src="./imagenes/gray-kitty-with-monochrome-wall-her.jpg" class="d-block w-100"
+              alt="Paco mirando a cámara">
+            <div class="carousel-caption d-none d-md-block text-start">
+              <h5>Dios que satisfecho estoy</h5>
+            </div>
+          </div>
+
+
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Atrás</span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden"></span>
+        </button>
+
+      </div>
+    </section>
+
+    <!-- Aquí tenemos la sección de adoptar, dividida en 2 partes, para michis y perretes -->
+    <section id="adopta" class="py-5">
+      <div class="container">
+        <div class="title text-center">
+          <h3 class="position-relative d-inline-block">ADOPTAR</h3>
+        </div>
+
+        <div class="row g-2">
+
+          <div id="michi" class="adopta-list mt-4 row gx-0 gy-3">
+
+            <!-- Los michis son Paco y los perretes, Pepe, y no puedo explicar razonablemente el porqué -->
+
+            <h3 class="text-center">Michis</h3>
+
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2 best">
+              <div class="border-0">
+                <img src="./imagenes/paco2.jpg" class="card-img-top" alt="un gato mira con la mirada de alguien que ha visto demasiado">
+                <div class="card-body">
+                  <h5 class="card-title text-center">
+                    <a class="btn btn-primary border-white rounded-0" data-bs-toggle="collapse" href="#collapsePaco1"
+                      role="button" aria-expanded="false" aria-controls="collapseExample">
+                      Paco
+                    </a>
+                  </h5>
+                  <div class="collapse" id="collapsePaco1">
+                    <div class="card card-body">
+
+                      Yo he visto cosas que vosotros no creeríais. Atacar naves en llamas más allá de Orión. He visto
+                      rayos-C brillar en la oscuridad cerca de la Puerta de Tannhäuser. Todos esos momentos se perderán
+                      en el tiempo, como lágrimas en la lluvia. Es hora de morir.
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2 best">
+              <div class="border-0">
+                <img src="./imagenes/Paco3_Siames.jpg" class="card-img-top" alt="un gato investiga la actitud sospechosa de la persona que mira la página">
+                <div class="card-body">
+                  <h5 class="card-title text-center">
+                    <a class="btn btn-primary border-white rounded-0" data-bs-toggle="collapse" href="#collapsePaco2"
+                      role="button" aria-expanded="false" aria-controls="collapseExample">
+                      Julián
+                    </a>
+                  </h5>
+                  <div class="collapse" id="collapsePaco2">
+                    <div class="card card-body">
+                      "Solo una cosa más ... Soy Colombo. "
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2 best">
+              <div class="border-0">
+                <img src="./imagenes/Paco4_ByN.jpg" class="card-img-top" alt="un gato con una cabeza con forma de tazón mira expectante">
+                <div class="card-body">
+                  <h5 class="card-title text-center">
+                    <a class="btn btn-primary border-white rounded-0" data-bs-toggle="collapse" href="#collapsePaco3"
+                      role="button" aria-expanded="false" aria-controls="collapseExample">
+                      Tazón
+                    </a>
+                  </h5>
+                  <div class="collapse" id="collapsePaco3">
+                    <div class="card card-body">
+                      Soy una taza, una tetera
+                      una cuchara y un cucharón
+                      un plato hondo, un plato llano
+                      un cuchillito y un tenedor </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2 best">
+              <div class="border-0">
+                <img src="./imagenes/Paco5_GreyTigre.jpg" class="card-img-top" alt="un gato mira con ansia un pajaro que puede o no existir">
+                <div class="card-body">
+                  <h5 class="card-title text-center">
+                    <a class="btn btn-primary border-white rounded-0" data-bs-toggle="collapse" href="#collapsePaco4"
+                      role="button" aria-expanded="false" aria-controls="collapseExample">
+                      Polo
+                    </a>
+                  </h5>
+                  <div class="collapse" id="collapsePaco4">
+                    <div class="card card-body">
+                      Ficháo le tengo al paharó ezé, que no ze me ehcapa </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2 best">
+              <div class="border-0">
+                <img src="./imagenes/Paco6_Reina.jpg" class="card-img-top" alt="La gata Madre mira a sus súbitos, pues todos lo somos.">
+                <div class="card-body">
+                  <h5 class="card-title text-center">
+                    <a class="btn btn-primary border-white rounded-0" data-bs-toggle="collapse" href="#collapsePaco5"
+                      role="button" aria-expanded="false" aria-controls="collapseExample">
+                      Reina Madre
+                    </a>
+                  </h5>
+                  <div class="collapse" id="collapsePaco5">
+                    <div class="card card-body">
+                      Yo zoy la Reina Madre de todos los gatitos chiquititos y tengo unos ojos que ven dentro de usté.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2 best">
+              <div class="border-0">
+                <img src="./imagenes/Paco7_Batman.jpg" class="card-img-top" alt="Batman en gato vago">
+                <div class="card-body">
+                  <h5 class="card-title text-center">
+                    <a class="btn btn-primary border-white rounded-0" data-bs-toggle="collapse" href="#collapsePaco6"
+                      role="button" aria-expanded="false" aria-controls="collapseExample">
+                      Batman
+                    </a>
+                  </h5>
+                  <div class="collapse" id="collapsePaco6">
+                    <div class="card card-body">
+                      Soy Batman. </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2 best">
+              <div class="border-0">
+                <img src="./imagenes/Paco8_Inves.jpg" class="card-img-top" alt="Un gato perezoso mitad blanco mitad negro">
+                <div class="card-body">
+                  <h5 class="card-title text-center">
+                    <a class="btn btn-primary border-white rounded-0" data-bs-toggle="collapse" href="#collapsePaco7"
+                      role="button" aria-expanded="false" aria-controls="collapseExample">
+                      Mitá
+                    </a>
+                  </h5>
+                  <div class="collapse" id="collapsePaco7">
+                    <div class="card card-body">
+                      Yo como el café de Málaga, mitá - mitá </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2 best">
+              <div class="border-0">
+                <img src="./imagenes/paco9_DosCaras.jpg" class="card-img-top" alt="2 gatos en uno te miran con elevada inteligencia">
+                <div class="card-body">
+                  <h5 class="card-title text-center">
+                    <a class="btn btn-primary border-white rounded-0" data-bs-toggle="collapse" href="#collapsePaco8"
+                      role="button" aria-expanded="false" aria-controls="collapseExample">
+                      Dos Caras
+                    </a>
+                  </h5>
+                  <div class="collapse" id="collapsePaco8">
+                    <div class="card card-body">
+                      Bueno tengo nombre de malo de Batman pero es que la impresora falló al imprimirme </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div id="perrete" class="adopta-list mt-4 row gx-0 gy-3">
+
+            <h3 class="text-center">Perretes</h3>
+
+
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2 best">
+              <div class="border-0">
+                <img src="./imagenes/pepe1_Podenco.jpg" class="card-img-top" alt="un perro con mirada cansada ">
+                <div class="card-body">
+                  <h5 class="card-title text-center">
+                    <a class="btn btn-primary border-white rounded-0" data-bs-toggle="collapse" href="#collapsePaco9"
+                      role="button" aria-expanded="false" aria-controls="collapseExample">
+                      Dex
+                    </a>
+                  </h5>
+                  <div class="collapse" id="collapsePaco9">
+                    <div class="card card-body">
+                      Sinceramente, soy más de gatos que de perretes pero bueno.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2 best">
+              <div class="border-0">
+                <img src="./imagenes/pepe2_bodguero.jpg" class="card-img-top" alt="un perro féliz">
+                <div class="card-body">
+                  <h5 class="card-title text-center">
+                    <a class="btn btn-primary border-white rounded-0" data-bs-toggle="collapse" href="#collapsePaco10"
+                      role="button" aria-expanded="false" aria-controls="collapseExample">
+                      Boquín
+                    </a>
+                  </h5>
+                  <div class="collapse" id="collapsePaco10">
+                    <div class="card card-body">
+                      Boquin viene del latin boquinaron, que viene de boquerón que viene de relleno.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2 best">
+              <div class="border-0">
+                <img src="./imagenes/pepe3_amoroso.jpg" class="card-img-top" alt="un perro con una cabeza con forma de escudo">
+                <div class="card-body">
+                  <h5 class="card-title text-center">
+                    <a class="btn btn-primary border-white rounded-0" data-bs-toggle="collapse" href="#collapsePaco11"
+                      role="button" aria-expanded="false" aria-controls="collapseExample">
+                      Escudo
+                    </a>
+                  </h5>
+                  <div class="collapse" id="collapsePaco11">
+                    <div class="card card-body">
+                      ¿Verdad que mi cabeza parece el escudo de Link del Zelda?
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2 best">
+              <div class="border-0">
+                <img src="./imagenes/pepe4_ToyChiquito.jpg" class="card-img-top" alt="un perro to chico pero cuco">
+                <div class="card-body">
+                  <h5 class="card-title text-center">
+                    <a class="btn btn-primary border-white rounded-0" data-bs-toggle="collapse" href="#collapsePaco12"
+                      role="button" aria-expanded="false" aria-controls="collapseExample">
+                      Chiqui
+                    </a>
+                  </h5>
+                  <div class="collapse" id="collapsePaco12">
+                    <div class="card card-body">
+                      Hola buenos díah zoy Chiqui, soy chiquitillo pero tengo musho árte de verdá ze lo huro
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <section id="galeria" class="py-5">
+      <!-- He cogido esta galería de aquí: https://mdbootstrap.com/docs/standard/extended/gallery/ -->
+
+      <div class="title text-center mb-5"> <!-- Margen inferior -->
+        <h3 class="position-relative d-inline-block">GALERÍA</h3>
+      </div>
+
+      <div class="container">
+
+        <div class="lightbox">
+
+          <div class="row">
+            <div class="col-lg-6">
+              <img src="./imagenes/paco3.jpg" data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Slides/1.webp"
+                alt="Paco te mira de reojo y te juzga" class="w-100 img-margin shadow-1-strong rounded" />
+              <img src="./imagenes/Paco5_GreyTigre.jpg" data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Square/1.webp"
+                alt="un gato con alucionaciones de pajaros" class="w-100 shadow-1-strong rounded" />
+            </div>
+
+            <div class="col-lg-6">
+              <img src="./imagenes/paco9_DosCaras.jpg"
+                data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Vertical/1.webp" alt="2 gatos en uno pero más bonito y precioso que nada"
+                class="w-100 img-margin shadow-1-strong rounded" />
+              <img src="./imagenes/Paco8_Inves.jpg" data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Vertical/1.webp"
+                alt="un gatete chonky mira con sospecha" class="w-100 shadow-1-strong rounded" />
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Aquí hay una sección que es sobre la protectora, con su filosofía y unas imágenes de Stock de Freepik. -->
+    <section id="nosotras" class="py-5">
+
+      <div class="title text-center mb-5"> <!-- Margen inferior -->
+        <h3 class="position-relative d-inline-block">SOBRE NOSOTRAS</h3>
+      </div>
+
+      <div class="container">
+        <div class="row gy-lg-5 align-items-center">
+          <div class="col-lg-6 text-center text-lg-start">
+            <div class="title pt-3 pb-5">
+              <h2 class="position-relative d-inline-block ms-4">Nosotras</h2>
+            </div>
+            <p class="lead text-muted">En nuestra protectora, promovemos el respeto y la dignidad de todos los seres
+              vivos, trabajando por un mundo donde humanos y animales convivan en armonía, basados en amor, compasión y
+              justicia</p>
+            <p>En nuestra protectora, promovemos una cultura de respeto, compasión y dignidad hacia todos los seres
+              vivos. Trabajamos por una convivencia armoniosa entre humanos y animales, basada en la igualdad, la
+              justicia y el cuidado amoroso. Nos comprometemos a educar, proteger y brindar bienestar, en colaboración
+              con otros, para construir un mundo sostenible y compasivo donde cada vida sea valorada.</p>
+          </div>
+          <div class="col-lg-6 text-center text-lg-start">
+            <img src="./imagenes/woman-showing-affection-rescue-dog-shelter.jpg" alt="una mujer le da cariño a un perro" class="img-fluid">
+          </div>
+        </div>
+
+        <!-- Segundo bloque con imagen y texto intercambiados -->
+
+        <div class="row gy-lg-5 align-items-center flex-lg-row-reverse my-5"> <!-- Agregado margen -->
+          <div class="col-lg-6 text-center text-lg-start">
+            <div class="title pt-3 pb-5">
+              <h2 class="position-relative d-inline-block ms-4">Nuestros métodos</h2>
+            </div>
+            <p class="lead text-muted">En nuestra protectora, utilizamos métodos éticos y respetuosos, basados en el
+              refuerzo positivo y el cuidado individualizado, para promover el bienestar de los animales que rescatamos.
+            </p>
+            <p>En nuestra protectora, empleamos métodos compasivos y efectivos para garantizar el bienestar de los
+              animales. A través del cuidado dedicado, la socialización adecuada y la atención veterinaria, logramos
+              resultados positivos, como adopciones exitosas y vidas transformadas.</p>
+          </div>
+          <div class="col-lg-6 text-center text-lg-start">
+            <img src="./imagenes/rescue-dog-enjoying-being-pet-by-woman-shelter.jpg" alt="un perro mira con amor a una mujer que le coge la pata" class="img-fluid">
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <div class="container">
+
+        <div class="row justify-content-center">
+          <div class="col-md-8"> <!-- Ajusta el número para cambiar el ancho del acordeón -->
+            <h3 class="text-center">Preguntas más frecuentes</h3>
+
+            <div class="accordion" id="accordionStaysOpen">
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="panelKeepsOpen-headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelKeepsOpen-collapseOne" aria-expanded="true"
+                    aria-controls="panelKeepsOpen-collapseOne">
+                    ¿Quién puede adoptar?
+                  </button>
+                </h2>
+                <div id="panelKeepsOpen-collapseOne" class="accordion-collapse collapse show"
+                  aria-labelledby="panelKeepsOpen-headingOne">
+                  <div class="accordion-body">
+                    <strong>Toda persona que tenga un hueco en su corazón para un acompañar a un animal en su vida puede
+                      adoptar.</strong>
+                    Deberás rellanar una serie de formularios así como compromisos de acompañamiento al veterinario.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="panelKeepsOpen-headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelKeepsOpen-collapseTwo" aria-expanded="false"
+                    aria-controls="panelKeepsOpen-collapseTwo">
+                    ¿Cuánto tarda el proceso de adopción?
+                  </button>
+                </h2>
+                <div id="panelKeepsOpen-collapseTwo" class="accordion-collapse collapse"
+                  aria-labelledby="panelKeepsOpen-headingTwo">
+                  <div class="accordion-body">
+                    <strong>El proceso es rápido.</strong> Como hemos comentado anteriormente, hay una serie de cosas a
+                    revisar, pero no suele tardar más de una semana.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="panelKeepsOpen-headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelKeepsOpen-collapseThree" aria-expanded="false"
+                    aria-controls="panelKeepsOpen-collapseThree">
+                    ¿Tiene algún coste adoptar?
+                  </button>
+                </h2>
+                <div id="panelKeepsOpen-collapseThree" class="accordion-collapse collapse"
+                  aria-labelledby="panelKeepsOpen-headingThree">
+                  <div class="accordion-body">
+                    <strong>Solo te solicitaremos cubrir los costes administrativos.</strong> Lo más importante para
+                    estos animales es tener un hogar en el que se les cuide y quiera.
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="panelKeepsOpen-headingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelKeepsOpen-collapseFour" aria-expanded="false"
+                    aria-controls="panelKeepsOpen-collapseThree">
+                    ¿Puedo ayudar de alguna forma?
+                  </button>
+                </h2>
+                <div id="panelKeepsOpen-collapseFour" class="accordion-collapse collapse"
+                  aria-labelledby="panelKeepsOpen-headingFour">
+                  <div class="accordion-body">
+                    <strong>Hay muchas maneras de ayudar.</strong> ¿Tienes pienso, mantas, juguetes o aparatos para los
+                    animales que no usas?
+                    ¿Tienes tiempo para echar una mano en la protectora? Siempre aceptamos nuevas manos.
+                    Aceptamos donaciones por diferentes métodos, ya sea transferencia bancaria, bizúm o cashapp.
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+    </section>
+
+    <!-- Aquí hay una sección de colaborar que tiene un modal que tiene un formulario que funciona pero no funciona. -->
+    <section id="colabora">
+      <div class="container">
+        <div class="d-flex flex-column align-items-center justify-content-center">
+          <div class="title text-center pt-3 pb-5">
+            <h3 class="position-relative d-inline-block ms-4">Colaborar</h3>
+          </div>
+
+          <p class="text-center text-muted">¿Quieres tener un rol más allá de adoptar a un michi o perrete? <br>
+            ¿Por qué no te haces voluntari@ y ayudas? </p>
+
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            ¡Quiero ser voluntaria!
+          </button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="staticBackdropLabel">Formulario de inscripción</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <!-- Formulario de inscripción-->
+                <div class="px-4">
+                  <form>
+
+                    <div class="mb-3">
+                      <label for="NombreVoluntario" class="form-label">Nombre</label>
+                      <input type="text" class="form-control" id="NombreVoluntario" aria-describedby="emailHelp">
+                    </div>
+
+                    <div class="mb-3">
+                      <label for="ApellidoVoluntario" class="form-label">Apellidos</label>
+                      <input type="text" class="form-control" id="ApellidoVoluntario" aria-describedby="emailHelp">
+                    </div>
+
+                    <div class="mb-3">
+                      <label for="GeneroVoluntario" class="form-label">Género</label>
+                      <select class="form-select" aria-label="Default select example" id="GeneroVoluntario">
+                        <option selected value="">Selecciona tú género</option>
+                        <option value="1">Femenino</option>
+                        <option value="2">Masculino</option>
+                        <option value="3">No binario</option>
+                      </select>
+                    </div>
+
+                    <div class="mb-3">
+                      <label for="EmailVoluntario" class="form-label">Email</label>
+                      <input type="email" class="form-control" id="EmailVoluntario" aria-describedby="emailHelp">
+                    </div>
+
+                    <div class="mb-3">
+                      <label for="NumeroVoluntario" class="form-label">Número de teléfono</label>
+                      <input type="text" class="form-control" id="NumeroVoluntario" aria-describedby="emailHelp">
+                    </div>
+
+                    <div class="mb-3">
+                      <label for="ContactoVoluntario" class="form-label">¿Cómo quieres que contactemos contigo?</label>
+                      <select class="form-select" aria-label="Default select example" id="ContactoVoluntario">
+                        <option selected value="">Selecciona una opción</option>
+                        <option value="1">Email</option>
+                        <option value="2">Llamada</option>
+                        <option value="3">Me indiferente</option>
+                      </select>
+                    </div>
+
+
+                    <div class="mb-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">He leído y acepto la política de
+                        privacidad</label>
+                    </div>
+
+                    <div class="mb-3 form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                      <label class="form-check-label" for="flexCheckChecked">Deseo recibir en el email suministrado
+                        vuestra newsletter.</label>
+                    </div>
+
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                      <button type="submit" formmethod="post" class="btn btn-primary">Enviar</button>
+                    </div>
+
+                  </form>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Es una pequeña newsletter que sirve para que las personas puedan introducir su email -->
+    <section id="newsletter" class="py-5 mt-4">
+      <div class="container  ">
+        <div class="d-flex flex-column align-items-center justify-content-center">
+          <div class="title text-center pt-3 pb-5">
+            <h3 class="position-relative d-inline-block ms-4">Miau Noticias</h3>
+          </div>
+
+          <p class="text-center text-muted">¿Quieres recibir un boletín mensual sobre nuestras futuras actividades?
+            ¡Suscribete!</p>
+          <div class="input-group mb-3 mt-3 col-12 col-md-4">
+            <input type="text" class="form-control" placeholder="Introduce tu email ...">
+            <button class="btn btn-primary" type="submit">Suscribir</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <footer class="bg-dark py-5">
+      <div class="container">
+        <div class="row text-white g-4 justify-content-center">
+          <!-- Añadimos justify-content-center para centrar el contenido -->
+
+          <div class="col-12 col-lg-6">
+            <div class="ratio ratio-16x9">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3196.789805667596!2d-4.4333827!3d36.75161610000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72f650cc38d9eb%3A0x67509795dc72b87a!2sCam.%20de%20las%20Erizas%2C%204%2C%2029011%2C%20M%C3%A1laga!5e0!3m2!1sen!2ses!4v1685286989224!5m2!1sen!2ses"
+                style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <h5 class="fw-light mb-3" id="contact">Contacta con nosotras</h5>
+            <div class="d-flex justify-content-start align-items-start my-2 text-muted">
+              <span class="me-3">
+                <i class="fas fa-map-marked-alt"></i>
+              </span>
+              <span class="fw-light">
+                <a href="https://www.google.com/maps/search/?api=1&query=Camino+de+las+Erizas+4+Málaga"
+                  target="_blank">Camino de las Erizas, 4 Málaga</a>
+              </span>
+            </div>
+            <div class="d-flex justify-content-start align-items-start my-2 text-muted">
+              <span class="me-3">
+                <i class="fas fa-envelope"></i>
+              </span>
+              <span class="fw-light">
+                <a href="mailto:contacto@protectoramalaga.com">contacto@protectoramalaga.com</a>
+              </span>
+            </div>
+            <div class="d-flex justify-content-start align-items-start my-2 text-muted">
+              <span class="me-3">
+                <i class="fas fa-phone-alt"></i>
+              </span>
+              <span class="fw-light">
+                <a href="tel:+34951946977">+34 951 946 977</a>
+              </span>
+            </div>
+
+            <h5 class="fw-light mb-3 mt-4">RRSS</h5>
+            <div>
+              <ul class="list-unstyled d-flex">
+                <li>
+                  <a href="https://www.facebook.com/spapma"
+                    class="text-white text-decoration-none text-muted fs-4 me-4 facebook">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/protemalaga"
+                    class="text-white text-decoration-none text-muted fs-4 me-4 twitter">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/protemlg/"
+                    class="text-white text-decoration-none text-muted fs-4 me-4 instagram">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+
+
+    </footer>
+
+
+
+
+
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+    integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+    crossorigin="anonymous"></script>
+  <script src="javascript.js"></script>
+
+
+</body>
+
+</html>

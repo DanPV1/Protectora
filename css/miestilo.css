@@ -1,0 +1,156 @@
+/****************** TIPOGRAFÍA *******************/
+
+body {
+  font-family: "CustomFont";
+  src:url(/fuentes/Montserrat-Italic-VariableFont_wght.ttf);
+  src: url(/fuentes/Montserrat-VariableFont_wght.ttf);
+}
+
+
+/*************** NAVBAR **************************/
+
+.navbar-brand {
+  margin-left: 80px; 
+}
+
+/************ HERO *******************************/
+
+#hero .carousel-item img {
+  max-height: 100vh;
+  object-fit: cover;
+}
+
+.carousel-caption {
+  position: absolute;
+  right: 0;
+  bottom: 80%; 
+  left: 0;
+  z-index: 10;
+  padding: 20px; /* Añade un espacio alrededor del texto */
+  color: #fff; 
+  text-align: right;
+  font-size: 2em; /* Cambia el tamaño de la fuente */
+  max-width: 80%; /* Ancho máximo para el texto */
+}
+
+.carousel-item:nth-child(3) .carousel-caption {
+  text-align: left;
+}
+
+
+
+/**************** SUBRAYADO TITULOS SECCIÓN ******/
+
+.title h3::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  margin-top: 0.5em;
+}
+
+
+/*************** AJUSTE DISEÑO CARDS *************/
+.card {
+  height: 100%; 
+}
+
+.card-title {
+  margin-top: 5px;
+}
+
+.card-img-top {
+  height: 200px; 
+  object-fit: cover;
+}
+
+.btn, .btn-primary {
+  background-color: #e6bdbd;
+  color: #080808;
+  border-color: #000;
+
+}
+
+.btn:hover, .btn-primary:hover {
+  background-color: rgb(143, 70, 115);
+  color: #FFFFFF; 
+  border-color: #000;
+}
+
+/*************** GALERIA AJUSTES  ****************/
+
+.img-margin {
+  margin-bottom: 2rem;
+}
+
+/*************** ACCORDEON ***********************/
+
+.accordion-button:focus {
+  color: #FFFFFF;  /* Para cambiar el color del texto */
+  background-color: rgb(143, 70, 115);
+  border-color: #000;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #FFFFFF; 
+  background-color: rgb(143, 70, 115);
+  border-color: #000;
+}
+
+
+
+/************** AJUSTE NEWSLETTER ****************/
+
+#newsletter {
+  background-color: rgba(160, 28, 28, 0.05);
+}
+
+#newsletter p {
+  max-width: 500px;
+}
+
+#newsletter .input-group {
+  max-width: 500px;
+}
+
+#newsletter .form-control {
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+#newsletter .btn {
+  background-color: #e6bdbd;
+  color: #000000;
+  border-color: #000;
+}
+
+#newsletter .btn:hover {
+  background-color: rgb(143, 70, 115);
+  border-color: #000;
+}
+
+/******************* BOTONES RRSS ***********************/
+
+.facebook:hover {
+  color: #3b5998 !important;
+}
+
+.twitter:hover {
+  color: #1DA1F2 !important;
+}
+
+.instagram:hover {
+  color: #C13584 !important;
+}
+
+/* Ajustar el color de fondo de la sección "nosotras" */
+#nosotras {
+  background-color: #faf3f3;
+}
+
+@media(min-width: 992px) {
+  .nav-item {
+    border-bottom: none;
+  }
+}
